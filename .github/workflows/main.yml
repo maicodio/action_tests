@@ -32,7 +32,7 @@ jobs:
           sa password: SqlSever123123
       - name: Install SQL Server Client
         run: |
-          apt-get install curl
+          sudo apt-get install curl
           curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
           curl https://packages.microsoft.com/config/ubuntu/18.04/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
           sudo apt-get update 
